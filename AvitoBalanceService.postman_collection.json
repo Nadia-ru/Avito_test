@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "828935c2-1368-4d28-846e-725273ce2eff",
+		"name": "AvitoBalanceService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18186797"
+	},
+	"item": [
+		{
+			"name": "accrual",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 2,\r\n    \"amount\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/accrual",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accrual"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/get_balance",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"get_balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reservation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/reservation",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"reservation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "un reservation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/un_reservation",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"un_reservation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

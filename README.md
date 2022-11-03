@@ -1,1 +1,5 @@
-# Avito_test
+
+### Запуск докера проекта
+
+docker-compose up
+
